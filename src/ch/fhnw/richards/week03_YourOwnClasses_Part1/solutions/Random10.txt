@@ -1,0 +1,5 @@
+// This CodeRunner question only requires a single method, not a full class
+
+public static int random10() {
+    return (int) (Math.random() * 10 + 1);
+}

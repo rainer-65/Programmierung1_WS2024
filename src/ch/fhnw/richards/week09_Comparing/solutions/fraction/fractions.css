@@ -1,0 +1,10 @@
+.numerator {
+	-fx-border-style: hidden hidden solid hidden;
+	-fx-border-color: black;
+	-fx-border-width: 2px;
+}
+
+.root {
+	-fx-padding: 20px;
+	-fx-font-size: 18px;
+}
