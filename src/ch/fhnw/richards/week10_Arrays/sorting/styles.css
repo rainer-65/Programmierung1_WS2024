@@ -1,0 +1,21 @@
+.label {
+  -fx-font-size: 16px;
+  -fx-font-weight: bold;
+  -fx-font-style: italic;
+  -fx-text-fill: #000000;
+  -fx-padding: 10px;
+  -fx-min-width: 150px;
+}
+
+.button {
+  -fx-font-size: 16px;
+  -fx-font-weight: bold;
+  -fx-font-style: italic;
+  -fx-text-fill: #000000;
+  -fx-min-width: 150px;
+}
+
+.root {
+	-fx-padding: 20px;
+}
+
