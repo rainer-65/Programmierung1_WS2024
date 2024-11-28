@@ -12,10 +12,10 @@ public class Book implements Comparable<Book> {
     }
 
     @Override
-    public int compareTo(Book other)
-    {
+    public int compareTo(Book other) {
         return this.isbn.compareTo(other.isbn);
     }
+
 
     @Override
     public boolean equals(Object obj) {

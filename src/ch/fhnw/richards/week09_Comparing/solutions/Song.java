@@ -64,7 +64,7 @@ public class Song implements Comparable<Song> {
             return titleComparison;
         }
         // Compare by duration
-        return Integer.compare(this.duration, other.duration);
+        return this.duration - other.duration;
     }
 
     // Override toString for convenient display of Song instances

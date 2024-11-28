@@ -13,6 +13,12 @@ public class TestingEquals {
 		System.out.println( s1.equals(s3) );
 		System.out.println( s1.equals(s4) );
 		System.out.println( s1.equals(i1) );
+
+
+
+		// Test
+		System.out.println(s1.compareTo(s1) );
+
 	}
 
 }

@@ -1,5 +1,7 @@
 package ch.fhnw.richards.week09_Comparing;
 
+import java.util.Objects;
+
 public class Student implements Comparable<Student> {
     private int id;
     private String lastName;
@@ -35,6 +37,21 @@ public class Student implements Comparable<Student> {
     @Override
     public String toString() {
         return "Student{" + "id=" + id + ", lastName='" + lastName + '\'' + ", firstName='" + firstName + '\'' + ", gpa=" + gpa + '}';
+    }
+
+    // Implementing the equals method for GPA, last name, and first name
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return Double.compare(gpa, student.gpa) == 0 && Objects.equals(lastName, student.lastName) && Objects.equals(firstName, student.firstName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(lastName, firstName, gpa);
     }
 
     // Implementing the compareTo method for GPA, last name, and first name
